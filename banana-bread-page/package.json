@@ -1,0 +1,10 @@
+{
+  "name": "banana-bread-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.34.1"
+  }
+}
