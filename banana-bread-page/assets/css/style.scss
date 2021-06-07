@@ -1,0 +1,135 @@
+$yellow: #FFC72C;
+$darkgray: #27251F;
+$red: #DA291C;
+$gray: #E5E5E5;
+
+$phone: 480px;
+$tablet: 640px;
+$desktop: 1024px;
+
+
+body {
+  background: $yellow;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+  background: $darkgray;
+
+  .navbar {
+    margin: 0 auto;
+    padding: 1rem 0;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    a {
+      font-size: 1.25rem;
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $yellow;
+      }
+
+      &:focus,
+      :active {
+        background: #383838;
+        text-decoration-color: $red;
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+
+    input {
+      padding: 0.5rem;
+      border: 0;
+      border-radius: 10px;
+      outline: none;
+      margin-left: 5px;
+    }
+
+    .search-icon {
+      padding: 0 0.5rem;
+    }
+  }
+
+}
+
+/*** MAIN ****/
+
+main {
+
+  .hero-image {
+    height: 300px;
+    background-image: linear-gradient(to bottom, $darkgray, #00000000), url("../img/bread.webp");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+
+    h1 {
+      display: inline-block;
+      font-size: 3rem;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-evenly;
+
+      .info-data-title {
+        font-weight: bold;
+        background-color: #27272750;
+        padding: 1rem;
+        border-radius: 5px;
+
+        .info-data-text {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+
+/* On screens that are 768px or less, set the background color to olive */
+@media screen and (min-width: $tablet) {
+  main {
+    .hero-image {
+      height: 400px;
+      align-items: center;
+
+      .info>.info-data-title {
+        margin: 0 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  body {
+    background-color: blue;
+  }
+
+
+}
