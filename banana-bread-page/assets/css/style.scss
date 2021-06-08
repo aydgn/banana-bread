@@ -153,6 +153,26 @@ main {
 }
 
 
+#up-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 18px;
+  background-color: $yellow;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 200ms;
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: $red;
+  }
+}
+
 
 
 /* On screens that are 768px or less */
@@ -184,8 +204,4 @@ main {
       }
     }
   }
-}
-
-.back-to-top {
-  
 }

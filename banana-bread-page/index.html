@@ -93,7 +93,25 @@
     </div>
   </main>
 
-  <div class="back-to-top"><button>🔝</button></div>
+  <span id="up-btn" title="Go to top">
+    <a href="#">⬆️</a>
+  </span>
+
+  <script>
+    // https://youtu.be/ANnoNIMPWnQ?t=2
+
+    // Get go to top button
+    var upButton = document.getElementById("up-btn");
+
+    // When the user hit the bottom of the page
+    window.onscroll = function () {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        upButton.style.display = "block";
+      } else {
+        upButton.style.display = "none";
+      }
+    };
+  </script>
 </body>
 
 </html>
