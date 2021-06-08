@@ -9,88 +9,99 @@ $desktop: 1024px;
 
 
 body {
-  background: $yellow;
   margin: 0;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+/* TODO: NAV is not placed to true center */
 
 header {
   background: $darkgray;
 
   .navbar {
     margin: 0 auto;
-    padding: 1rem 0;
     flex-direction: column;
     display: flex;
     align-items: center;
-  }
 
-  nav {
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 1rem;
 
-    a {
-      font-size: 1.25rem;
-      color: #fff;
-      text-decoration: none;
-      padding: 1rem;
 
-      &:hover {
-        text-decoration: underline;
-        text-decoration-color: $yellow;
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+
+
+      a {
+        font-size: 1.25rem;
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+
+
+        &:hover {
+          background: $red;
+          border-bottom: 2px solid $yellow;
+        }
+
+        &:focus,
+        :active {
+          background: $yellow;
+          border-bottom: 2px solid $red;
+          color: $darkgray;
+        }
+      }
+    }
+
+
+    .search {
+      display: flex;
+      align-items: center;
+      background: #fff;
+
+      input {
+        padding: 0.5rem;
+        border: 0;
+        outline: none;
+        margin-left: 5px;
       }
 
-      &:focus,
-      :active {
-        background: #383838;
-        text-decoration-color: $red;
+      .search-icon {
+        padding: 0 0.5rem;
       }
     }
   }
-
-  .search {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    border-radius: 10px;
-
-    input {
-      padding: 0.5rem;
-      border: 0;
-      border-radius: 10px;
-      outline: none;
-      margin-left: 5px;
-    }
-
-    .search-icon {
-      padding: 0 0.5rem;
-    }
-  }
-
 }
 
 /*** MAIN ****/
 
 main {
+  max-width: 1200px;
+  margin: 0 auto;
 
   .hero-image {
     height: 300px;
     background-image: linear-gradient(to bottom, $darkgray, #00000000), url("../img/bread.webp");
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
 
+
     h1 {
       display: inline-block;
       font-size: 3rem;
+      margin: 1rem;
     }
 
     .info {
@@ -109,14 +120,46 @@ main {
       }
     }
   }
+
+
+  .content {
+    font-size: 1.2rem;
+
+    aside,
+    article {
+      h2 {
+        background: $red;
+        padding: 1rem;
+        color: #fff;
+      }
+    }
+
+
+    aside {
+      ul {
+        li {
+          list-style: circle;
+        }
+      }
+    }
+
+    article {
+      p {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
 }
 
 
-/* On screens that are 768px or less, set the background color to olive */
+
+
+/* On screens that are 768px or less */
 @media screen and (min-width: $tablet) {
   main {
     .hero-image {
-      height: 400px;
+      height: 500px;
       align-items: center;
 
       .info>.info-data-title {
@@ -127,9 +170,22 @@ main {
 }
 
 @media screen and (min-width: $desktop) {
-  body {
-    background-color: blue;
+  header {
+
+    .navbar {
+      max-width: 1200px;
+      flex-direction: row;
+      justify-content: space-between;
+
+      nav {
+        a {
+          padding: 1rem;
+        }
+      }
+    }
   }
+}
 
-
+.back-to-top {
+  
 }
