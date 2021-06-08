@@ -32,7 +32,6 @@ header {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 0.5rem;
 
 
       a {
@@ -96,6 +95,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
+    border-radius: 0 0 10px 10px;
 
 
     h1 {
@@ -131,6 +131,8 @@ main {
         background: $red;
         padding: 1rem;
         color: #fff;
+        border-radius: 10px;
+        margin: 1rem;
       }
     }
 
@@ -182,6 +184,7 @@ main {
       height: 500px;
       align-items: center;
 
+
       .info>.info-data-title {
         margin: 0 1rem;
       }
@@ -196,11 +199,34 @@ main {
       max-width: 1200px;
       flex-direction: row;
       justify-content: space-between;
+      padding: 0;
 
       nav {
         a {
-          padding: 1rem;
+          padding: 1.5rem 1rem;
+          margin: 0;
         }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+
+    aside {
+      flex-basis: 200px;
+
+      h2 {
+        margin: 0;
+      }
+
+    }
+
+    article {
+
+
+      h2 {
+        margin: 0;
       }
     }
   }
