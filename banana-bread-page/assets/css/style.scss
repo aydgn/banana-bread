@@ -151,22 +151,17 @@ main {
       }
 
       img {
-
         width: 100%;
       }
 
       .img-row {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items: center;
         gap: 0.5rem;
 
         img {
           width: 100%;
-
-          &:first-child {
-            border-radius: 1rem;
-          }
+          height: 100%;
         }
       }
 
@@ -176,18 +171,18 @@ main {
         padding-bottom: 56.25%;
         /* 16:9 https://css-tricks.com/fluid-width-video/#iframe-video-youtube-vimeo-etc*/
         height: 0;
-      }
 
-      .video iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 1rem 0 0 1rem;
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
+
 }
 
 #up-btn {
@@ -268,9 +263,6 @@ main {
         }
       }
 
-      img {
-        border-radius: 1rem 0 0 1rem;
-      }
     }
   }
 }
