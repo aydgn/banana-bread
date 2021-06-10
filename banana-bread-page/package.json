@@ -8,7 +8,7 @@
     "sass": "^1.34.1"
   },
   "scripts": {
-    "build": "parcel build index.html --dist-dir build",
+    "build": "parcel build index.html -d build",
     "dev": "parcel index.html"
   }
 }
