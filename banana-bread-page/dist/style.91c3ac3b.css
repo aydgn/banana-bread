@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
+  color: #27251F;
+  background: #FFC72C;
 }
 
 /* TODO: NAV is not placed to true center */
@@ -57,6 +59,7 @@ header .navbar .search .search-icon {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  background: #fff;
 }
 main .hero-image {
   height: 300px;
@@ -69,7 +72,6 @@ main .hero-image {
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  border-radius: 0 0 10px 10px;
 }
 main .hero-image h1 {
   display: inline-block;
@@ -96,10 +98,8 @@ main .content {
 }
 main .content aside h2,
 main .content article h2 {
-  background: #DA291C;
   padding: 1rem;
-  color: #fff;
-  border-radius: 10px;
+  border-left: 0.5rem solid #DA291C;
   margin: 1rem;
 }
 main .content aside ul li {

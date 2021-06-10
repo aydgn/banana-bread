@@ -12,6 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
+  color: $darkgray;
+  background: $yellow;
 }
 
 /* TODO: NAV is not placed to true center */
@@ -77,6 +79,7 @@ header {
 main {
   max-width: 1200px;
   margin: 0 auto;
+  background: #fff;
 
   .hero-image {
     height: 300px;
@@ -89,7 +92,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     color: #fff;
-    border-radius: 0 0 10px 10px;
+
 
 
     h1 {
@@ -124,10 +127,8 @@ main {
     aside,
     article {
       h2 {
-        background: $red;
         padding: 1rem;
-        color: #fff;
-        border-radius: 10px;
+        border-left: 0.5rem solid $red;
         margin: 1rem;
       }
     }
