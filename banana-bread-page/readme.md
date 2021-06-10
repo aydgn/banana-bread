@@ -2,22 +2,16 @@
 
 Final product should be in **build** folder. If not, you may want to bundle yourself with Parcel.
 
-In order to bundle you should have Parcel CLI installed:
+In order to bundle:
 
 ## Yarn
 
 ```
-yarn global add parcel-bundler
+yarn build
 ```
 
 ## NPM
 
 ```
-npm install -g parcel-bundler
-```
-
-Then
-
-```
-yarn build
+npm run build
 ```
