@@ -1,0 +1,15 @@
+{
+  "name": "banana-bread-page",
+  "version": "1.0.0",
+  "main": "index.html",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-beta.2",
+    "parcel": "^2.0.0-beta.2",
+    "sass": "^1.34.1"
+  },
+  "scripts": {
+    "build": "parcel build index.html --dist-dir build",
+    "dev": "parcel index.html"
+  }
+}

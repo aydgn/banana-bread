@@ -1,0 +1,5 @@
+.DS_Store
+banana-bread-page/.cache/
+banana-bread-page/parcel-cache/
+banana-bread-page/dist/
+banana-bread-page/node_modules/
